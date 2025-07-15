@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <script
+            src="https://kit.fontawesome.com/396dc8a075.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="website_header">
+                    <a href="" class="website_header_link">
+                        <i class="fa-solid fa-building-columns"></i>
+                        FinanceBank
+                    </a>
+                </h1>
+
+                <input
+                    type="checkbox"
+                    id="menu-toggle"
+                    aria-label="Toggle menu"
+                    class="menu-toggle"
+                />
+                <label for="menu-toggle" class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="nav_and_profile_group">
+                    <nav role="navigation">
+                        <ul class="header_nav_ul">
+                            <li class="header_nav_ul_li">
+                                <a href="" class="nav_link active">Dashboard</a>
+                            </li>
+                            <li class="header_nav_ul_li">
+                                <a href="./transactions.html" class="nav_link"
+                                    >Transactions</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="profile_section">
+                        <div class="profile_img_div">
+                            <img
+                                src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?w=1380"
+                                alt="Profile Image"
+                            />
+                        </div>
+                        <h4 class="name">Amanda Flores</h4>
+                    </section>
+                </div>
+
+                <div class="mobile-menu">
+                    <nav role="navigation">
+                        <ul class="mobile-nav-ul">
+                            <li>
+                                <a href="" class="nav_link active">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="./transactions.html" class="nav_link"
+                                    >Transactions</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="mobile-profile">
+                        <div class="profile_img_div">
+                            <img
+                                src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?w=1380"
+                                alt="Profile Image"
+                            />
+                        </div>
+                        <h4 class="name">Amanda Flores</h4>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <article class="greetings">
+                    <h2 class="main_header">Welcome back, Amanda Flores!</h2>
+                    <p class="main_p">
+                        Here is your financial overview for today
+                    </p>
+                </article>
+                <section class="bank-holding">
+                    <article class="bank-holding__card">
+                        <div class="card__details">
+                            <div class="card__icon main_checking">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+                            <div class="card__info">
+                                <h5 class="card__type">Main checking</h5>
+                                <p class="card__number">**** 4532</p>
+                            </div>
+                        </div>
+                        <div class="card__balance">
+                            <h4 class="card__balance-amount">$ 12,875.29</h4>
+                            <p class="card__balance-progress">+2.5%</p>
+                        </div>
+                    </article>
+                    <article class="bank-holding__card">
+                        <div class="card__details">
+                            <div class="card__icon card_saving">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                            <div class="card__info">
+                                <h5 class="card__type">Savings account</h5>
+                                <p class="card__number">**** 7891</p>
+                            </div>
+                        </div>
+                        <div class="card__balance">
+                            <h4 class="card__balance-amount">$ 3,761.34</h4>
+                            <p class="card__balance-progress">+1.7%</p>
+                        </div>
+                    </article>
+                    <article class="bank-holding__card">
+                        <div class="card__details">
+                            <div class="card__icon investment">
+                                <i class="fa-solid fa-money-bill-trend-up"></i>
+                            </div>
+                            <div class="card__info">
+                                <h5 class="card__type">Investment</h5>
+                                <p class="card__number">**** 2512</p>
+                            </div>
+                        </div>
+                        <div class="card__balance">
+                            <h4 class="card__balance-amount">$19,375.87</h4>
+                            <p class="card__balance-progress">+3,7%</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="spending">
+                    <article class="spending__this-month">
+                        <div class="this-month__header">
+                            <h4>Money Spent This Month</h4>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="this-month__total-spending">
+                            <div class="total-spending__total">
+                                <p>Total Spent</p>
+                                <h5>$3,200/$4,000</h5>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_bar"></div>
+                            </div>
+                            <div class="total-spending__budget">
+                                <p>80% of budget</p>
+                                <p>$800.00 remaining</p>
+                            </div>
+                        </div>
+                        <section class="categories">
+                            <div class="each-category">
+                                <div class="category__name f">
+                                    <div class="food">
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <p>Food&Drinking</p>
+                                </div>
+                                <h5>$1,245.50</h5>
+                            </div>
+                            <div class="each-category">
+                                <div class="category__name">
+                                    <div class="shopping">
+                                        <i
+                                            class="fa-solid fa-cart-shopping"
+                                        ></i>
+                                    </div>
+                                    <p>Shopping</p>
+                                </div>
+                                <h5>$867.30</h5>
+                            </div>
+                            <div class="each-category">
+                                <div class="category__name">
+                                    <div class="transport">
+                                        <i class="fa-solid fa-gas-pump"></i>
+                                    </div>
+                                    <p>Transportation</p>
+                                </div>
+                                <h5>$456.90</h5>
+                            </div>
+                            <div class="each-category">
+                                <div class="category__name">
+                                    <div class="entertainment">
+                                        <i
+                                            class="fa-solid fa-masks-theater"
+                                        ></i>
+                                    </div>
+                                    <p>Entertainment</p>
+                                </div>
+                                <h5>$630.30</h5>
+                            </div>
+                        </section>
+                    </article>
+                    <article class="spending__transactions">
+                        <div class="transactions__header">
+                            <h4>Recent Transactions</h4>
+                            <a href="">View All</a>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction__info">
+                                <div class="transaction__icon shopping-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <div>
+                                    <h5>Amazon Purchase</h5>
+                                    <p>Today, 2:34 PM</p>
+                                </div>
+                            </div>
+                            <div class="transaction__amount negative">
+                                -$89.99
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction__info">
+                                <div class="transaction__icon food-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                                <div>
+                                    <h5>Pizza Place</h5>
+                                    <p>Yesterday, 7:15 PM</p>
+                                </div>
+                            </div>
+                            <div class="transaction__amount negative">
+                                -$24.50
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction__info">
+                                <div class="transaction__icon transport-icon">
+                                    <i class="fa-solid fa-gas-pump"></i>
+                                </div>
+                                <div>
+                                    <h5>Gas Station</h5>
+                                    <p>July 12, 11:05 AM</p>
+                                </div>
+                            </div>
+                            <div class="transaction__amount negative">
+                                -$40.00
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction__info">
+                                <div
+                                    class="transaction__icon entertainment-icon"
+                                >
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+                                <div>
+                                    <h5>Cinema</h5>
+                                    <p>July 10, 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="transaction__amount negative">
+                                -$15.00
+                            </div>
+                        </div>
+                        <div class="transaction">
+                            <div class="transaction__info">
+                                <div class="transaction__icon">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </div>
+                                <div>
+                                    <h5>Salary</h5>
+                                    <p>July 1, 9:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="transaction__amount positive">
+                                +$4,000.00
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="balance-overview">
+                    <div class="balance-overview__cards">
+                        <article class="balance-overview_each-card">
+                            <div class="balance-overview__icon total">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </div>
+                            <div class="balance-overview__text">
+                                <p class="balance-overview__type">
+                                    Total Balance:
+                                </p>
+                                <h4 class="balance-overview__total-balance">
+                                    $ 36,012.50
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="balance-overview_each-card">
+                            <div class="balance-overview__icon income">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                            <div class="balance-overview__text">
+                                <p class="balance-overview__type">
+                                    Monthly Income:
+                                </p>
+                                <h4 class="balance-overview__total-balance">
+                                    $ 8,500.00
+                                </h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="balance-overview__cards">
+                        <article class="balance-overview_each-card">
+                            <div class="balance-overview__icon expenses">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </div>
+                            <div class="balance-overview__text">
+                                <p class="balance-overview__type">
+                                    Monthly Expenses:
+                                </p>
+                                <h4 class="balance-overview__total-balance">
+                                    $ 3,567.00
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="balance-overview_each-card">
+                            <div class="balance-overview__icon save">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                            <div class="balance-overview__text">
+                                <p class="balance-overview__type">
+                                    Saving Rate:
+                                </p>
+                                <h4 class="balance-overview__total-balance">
+                                    61.8%
+                                </h4>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav>
+                    <ul class="footer__socials">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Facebook"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://x.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Twitter"
+                            >
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Instagram"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="footer__link">Terms</a></li>
+                        <li><a href="#" class="footer__link">Support</a></li>
+                    </ul>
+                </nav>
+                <p class="footer__text">
+                    &copy; 2025 FinanceBank. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

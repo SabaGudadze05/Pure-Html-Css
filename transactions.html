@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <title>Document</title>
+        <script
+            src="https://kit.fontawesome.com/396dc8a075.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="website_header">
+                    <a href="" class="website_header_link">
+                        <i class="fa-solid fa-building-columns"></i>
+                        FinanceBank
+                    </a>
+                </h1>
+
+                <input
+                    type="checkbox"
+                    id="menu-toggle"
+                    aria-label="Toggle menu"
+                    class="menu-toggle"
+                />
+                <label for="menu-toggle" class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="nav_and_profile_group">
+                    <nav role="navigation">
+                        <ul class="header_nav_ul">
+                            <li class="header_nav_ul_li">
+                                <a href="./dashboard.html" class="nav_link"
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li class="header_nav_ul_li">
+                                <a
+                                    href="./transactions.html"
+                                    class="nav_link active"
+                                    >Transactions</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="profile_section">
+                        <div class="profile_img_div">
+                            <img
+                                src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?w=1380"
+                                alt="Profile Image"
+                            />
+                        </div>
+                        <h4 class="name">Amanda Flores</h4>
+                    </section>
+                </div>
+
+                <div class="mobile-menu">
+                    <nav role="navigation">
+                        <ul class="mobile-nav-ul">
+                            <li>
+                                <a href="./dashboard.html" class="nav_link"
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./transactions.html"
+                                    class="nav_link active"
+                                    >Transactions</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="mobile-profile">
+                        <div class="profile_img_div">
+                            <img
+                                src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?w=1380"
+                                alt="Profile Image"
+                            />
+                        </div>
+                        <h4 class="name">Amanda Flores</h4>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <article class="greetings">
+                    <h2 class="main_header">Transaction History</h2>
+                    <p class="main_p">Your recent financial activity</p>
+                </article>
+                <section class="transactions_table_section">
+                    <div class="transactions_wrapper">
+                        <table class="transactions_table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th class="hide-on-mobile">Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>Today</strong>
+                                            <span>2:34 PM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon shopping">
+                                                <i
+                                                    class="fa-solid fa-cart-shopping"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">
+                                                    Amazon Purchase
+                                                </p>
+                                                <p class="subtitle">
+                                                    Online order
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $89.99</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge shopping"
+                                            >Shopping</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>Yesterday</strong>
+                                            <span>7:15 PM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon food">
+                                                <i
+                                                    class="fa-solid fa-utensils"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">Pizza Place</p>
+                                                <p class="subtitle">
+                                                    Dinner expense
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $24.50</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge food">Food</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 12</strong>
+                                            <span>11:05 AM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon transport">
+                                                <i
+                                                    class="fa-solid fa-gas-pump"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">Gas Station</p>
+                                                <p class="subtitle">
+                                                    Fuel refill
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $40.00</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge transport"
+                                            >Transport</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 10</strong>
+                                            <span>8:00 PM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon entertainment">
+                                                <i class="fa-solid fa-film"></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">Cinema</p>
+                                                <p class="subtitle">
+                                                    Movie ticket
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $15.00</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge entertainment"
+                                            >Entertainment</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 10</strong>
+                                            <span>9:00 AM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon income">
+                                                <i
+                                                    class="fa-solid fa-sack-dollar"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">Salary</p>
+                                                <p class="subtitle">
+                                                    Monthly income
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount positive">+ $4,000.00</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge income">Income</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 9</strong>
+                                            <span>10:00 AM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon entertainment">
+                                                <i
+                                                    class="fa-solid fa-music"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">
+                                                    Spotify Subscription
+                                                </p>
+                                                <p class="subtitle">
+                                                    Monthly premium plan
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $9.99</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge entertainment"
+                                            >Entertainment</span
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 8</strong>
+                                            <span>3:00 PM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon income">
+                                                <i
+                                                    class="fa-solid fa-briefcase"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">
+                                                    Freelance Work
+                                                </p>
+                                                <p class="subtitle">
+                                                    Client transfer via PayPal
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount positive">+ $850.00</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge income">Income</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="date_block">
+                                            <strong>July 7</strong>
+                                            <span>5:30 PM</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="desc_block">
+                                            <span class="icon food">
+                                                <i
+                                                    class="fa-solid fa-basket-shopping"
+                                                ></i>
+                                            </span>
+                                            <div>
+                                                <p class="title">
+                                                    Grocery Store
+                                                </p>
+                                                <p class="subtitle">
+                                                    Weekly food shopping
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="amount negative">- $67.80</td>
+                                    <td class="hide-on-mobile">
+                                        <span class="badge food">Food</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="navigation">
+                    <p>Showing 8 of 93 transactions</p>
+                    <div class="pagination">
+                        <button class="pagination_button">Previous</button>
+                        <button class="pagination_button active_page">1</button>
+                        <button class="pagination_button">2</button>
+                        <button class="pagination_button">3</button>
+                        <button class="pagination_button">Next</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav>
+                    <ul class="footer__socials">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Facebook"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://x.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Twitter"
+                            >
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="Instagram"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                class="footer__social-link"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__text">
+                    &copy; 2025 FinanceBank. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

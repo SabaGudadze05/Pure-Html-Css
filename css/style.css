@@ -1,0 +1,739 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Here is styled container because of, it will be used in the future too. I think it is like global for my project */
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1121;
+    box-shadow: 2px 2px 8px #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+header .container {
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1121;
+}
+.website_header {
+    font-size: 2.5rem;
+    color: #00adee;
+    transition: 0.3s ease;
+}
+.website_header_link {
+    color: #00adee;
+}
+.website_header:hover {
+    transform: scale(1.02);
+}
+.nav_and_profile_group {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.header_nav_ul {
+    display: flex;
+    gap: 2rem;
+    align-items: c;
+}
+
+.nav_link {
+    color: #00adee;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.nav_link:hover {
+    color: #0077b6;
+    transform: scale(1.02);
+}
+.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #0077b6;
+    font-weight: 600;
+}
+.profile_section {
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #e0f7fa;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.profile_section:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.02);
+}
+.profile_img_div {
+    width: 5rem;
+    height: 5rem;
+}
+.profile_img_div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name {
+    font-size: 1.8rem;
+    color: #424c5b;
+}
+/* For burger menu  */
+.menu-toggle {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    z-index: 1001;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #00adee;
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+
+.mobile-menu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.mobile-nav-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.mobile-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #e0f7fa;
+    border-radius: 2rem;
+}
+/* main */
+main {
+    padding-top: 10rem;
+    width: 100%;
+    background-color: #f9fafb;
+}
+main .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.greetings {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+.main_header {
+    color: #2c3240;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.main_p {
+    color: #7d7d7d;
+    font-size: 2rem;
+}
+/* bank holding */
+.bank-holding {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.bank-holding__card {
+    padding: 2rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    transition: 0.3s ease;
+}
+.bank-holding__card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+.card__icon {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card__type {
+    color: #2e3542;
+    font-size: 2rem;
+}
+.card__number {
+    color: #9da1aa;
+    font-size: 1.5rem;
+}
+.card__balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__balance-amount {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2e3542;
+}
+.card__balance-progress {
+    font-size: 1.5rem;
+    color: #23a854;
+}
+/* Concrete colors for cards */
+.main_checking {
+    background-color: #e0f7fa;
+    color: #3f76ee;
+}
+.card_saving {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+.investment {
+    background-color: #f3e8ff;
+    color: #9f49ed;
+}
+/* Spending section */
+.spending {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+.spending__this-month {
+    padding: 4rem;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+}
+.this-month__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+.this-month__total-spending {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.total-spending__total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.total-spending__total p {
+    color: #9da1aa;
+}
+.total-spending__total h5 {
+    font-weight: 600;
+}
+.progress {
+    width: 100%;
+    height: 1rem;
+    background-color: #e5e7eb;
+    border-radius: 0.5rem;
+}
+.progress_bar {
+    width: 80%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #631cff;
+    animation: fillBar 1s linear;
+}
+@keyframes fillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.total-spending__budget {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #9da1aa;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.each-category {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category__name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+}
+.category__name div {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.each-category h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.food {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+.shopping {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+.transport {
+    background-color: #dcfce7;
+    color: #2fae5e;
+}
+.entertainment {
+    background-color: #f3e8ff;
+    color: #cda2f7;
+}
+.spending__transactions {
+    padding: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+}
+.transactions__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+.transactions__header a {
+    font-size: 2rem;
+    color: #9f87ff;
+    transition: 0.3s ease;
+}
+.transactions__header a:hover {
+    cursor: pointer;
+    color: #631cff;
+}
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.transaction__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.transaction__icon {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #6b7280;
+}
+.transaction__info h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+.transaction__info p {
+    font-size: 1.2rem;
+    color: #9da1aa;
+    margin: 0;
+}
+.transaction__amount {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.transaction__amount.negative {
+    color: #dc2626;
+}
+.transaction__amount.positive {
+    color: #22c55e;
+}
+.shopping-icon {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+.food-icon {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+.transport-icon {
+    background-color: #dcfce7;
+    color: #2fae5e;
+}
+.entertainment-icon {
+    background-color: #f3e8ff;
+    color: #c084fc;
+}
+/* Balance overview section */
+.balance-overview {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    gap: 1.5rem;
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+.balance-overview__cards {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    width: 50%;
+}
+.balance-overview_each-card {
+    padding: 2rem;
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 3rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.2s linear;
+}
+.balance-overview_each-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1rem);
+    cursor: default;
+}
+.balance-overview__icon {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+.balance-overview__text {
+    font-size: 2rem;
+    color: #323643;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.balance-overview__text p {
+    font-size: 1.4rem;
+    color: #666666;
+}
+.total {
+    background-color: #e9e5ff;
+    color: #a4a1ff;
+}
+.income {
+    background-color: #dcfce7;
+    color: #4aba73;
+}
+.expenses {
+    background-color: #fee1e1;
+    color: #e03d3d;
+}
+.save {
+    background-color: #fef9c3;
+    color: #ca8a05;
+}
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.04);
+    width: 100%;
+}
+
+footer .container {
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.footer__text {
+    color: #7d7d7d;
+}
+.footer__socials {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.footer__social-link {
+    font-size: 1.8rem;
+    color: #00adee;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer__social-link:hover {
+    color: #0077b6;
+    transform: scale(1.1);
+}
+
+.footer__links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer__link {
+    color: #00adee;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #0077b6;
+}
+/* Second page */
+.transactions_table_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.transactions_wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.transactions_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+}
+
+.transactions_table thead {
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+.transactions_table th,
+.transactions_table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.date_block strong {
+    display: block;
+    font-weight: 600;
+    color: #2c3240;
+}
+
+.date_block span {
+    font-size: 1.4rem;
+    color: #9da1aa;
+}
+
+.desc_block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.desc_block .icon {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc_block .icon.income {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.desc_block .icon.shopping {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.desc_block .title {
+    font-weight: 600;
+    margin: 0;
+    color: #2e3542;
+}
+
+.desc_block .subtitle {
+    margin: 0.2rem 0 0;
+    font-size: 1.4rem;
+    color: #9da1aa;
+}
+
+.amount {
+    font-weight: 600;
+    text-align: left;
+}
+
+.amount.positive {
+    color: #22c55e;
+}
+
+.amount.negative {
+    color: #dc2626;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.badge.income {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.badge.shopping {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation p {
+    font-size: 1.8rem;
+}
+.pagination_button {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    background: inherit;
+    transition: 0.3s;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.pagination_button:hover,
+.active_page {
+    background-color: #631bff;
+    color: #b2ebf2;
+    cursor: pointer;
+}
